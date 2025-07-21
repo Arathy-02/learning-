@@ -3,66 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tutorial</title>
+    <title>Tutorial</title>
+    <style>
+        body {
+            background-image: url("HTML/asset/fingerprint.jpg"); /* Adjust to relative path */
+        }
+        h1 {
+            color: bisque;
+            font-family: Verdana;
+            font-size: 160%;
+        }
+        p.boxed {
+            border: 2px solid powderblue;
+        }
+    </style>
 </head>
 <body>
-    This is my 1st example
-</body>
-</html>
 
-<!DOCTYPE html>
-<html lang="en">
-<hr>    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tutorial</title>
-</head>
-<body><h1>1st heading</h1>
-    <h2>sub heading</h2>
-    <p>paragraphs</p>
-    <a href="https://www.w3schools.com/html/html_basic.asp"></a>    
-</body>
-<hr>
-<h1 style="font-size: 60px;">HTML images</h1>
-<p>this is how we add images in html</p>
-<img src="C:/Users/Lenovo/Pictures/fingerprint.jpg" alt="fingerprint" width="100" height="100">
-<p style="color:red;">this is a sentance in red color</p>
-<p title="im a tool tip">this is something to info about an element.</p>
-<hr>
-<h2>single or duoble quote</h2>
-<p title="jhon 'shot'nelson">jhon will show the full name </p>
-<hr> 
-<h3>next line</h3>
-<p>this will be after abreak beause hr id used before the heading.</p>
-<p>this is a <br>paragraph with <br>line break</p>
-<h2>poem</h2>
-<p>twinkle twinkle little star <br>how i wonder what you are <br>up abouve the whole so high <br>like a diamond in the sky</p>
-<h3>The pre tag preserves both spaces and line breaks</h3>
-<pre> 
+    <h1>1st Heading</h1>
+    <h2>Sub Heading</h2>
+    <p>Paragraphs</p>
+
+    <a href="https://www.w3schools.com/html/html_basic.asp" style="color:blue;">W3Schools Basic HTML</a>
+    <p><a href="https://www.w3schools.com/html/html_basic.asp" style="color:blue;" target="_blank">W3Schools (open in new tab)</a></p>
+
+    <hr>
+
+    <h1 style="font-size: 60px;">HTML Images</h1>
+    <p>This is how we add images in HTML:</p>
+    <img src="HTML/asset/fingerprint.jpg" alt="fingerprint" width="100" height="100">
+
+    <p style="color:red;">This is a sentence in red color.</p>
+    <p title="I'm a tooltip">This is something to inform about an element.</p>
+
+    <hr>
+
+    <h2>Single or Double Quotes</h2>
+    <p title="John 'Shot' Nelson">John will show the full name.</p>
+
+    <hr>
+
+    <h3>Next Line</h3>
+    <p>This will be after a break because &lt;hr&gt; is used before the heading.</p>
+    <p>This is a <br> paragraph with <br> line breaks.</p>
+
+    <h2>Poem</h2>
+    <p>
+        Twinkle twinkle little star <br>
+        How I wonder what you are <br>
+        Up above the world so high <br>
+        Like a diamond in the sky
+    </p>
+
+    <h3>The &lt;pre&gt; Tag Preserves Both Spaces and Line Breaks</h3>
+    <pre>
 My Bonnie lies over the ocean.
 My Bonnie lies over the sea.
 My Bonnie lies over the ocean.
 Oh, bring back my Bonnie to me.
-</pre>
-<h2 style="background-color: tomato;">this is color</h2>
-<h3 style="background-color: blue;">this is blue</h3>
-<hr>
-<!--<style>
-    h1{ color: bisque;
-    font-family: Verdana;
-    font-size: 160%;}
-</style>
-<h1>this is heading</h1>-->
-<!--<style>
-    p{border: 2px solid powderblue;}
-</style>
-<p>this will be in box because it use border style </p>-->
-<a href="https://www.w3schools.com/html/html_basic.asp" style="color:blue;">w3 school</a>
-<p><a href="https://www.w3schools.com/html/html_basic.asp" style="color:blue;" target="_blank">w3 school blank</a></p>
-<h2>image as a link</h2>
-    <p>this image below is a link.try to clik on it.</p>
-    <a href="https://www.w3schools.com/html/html_links.asp"><img src="smiley.gif" alt="HTML tutorial" style="width: 43px;height: 42px;"></a>
+    </pre>
 
+    <h2 style="background-color: tomato;">This is Tomato Color</h2>
+    <h3 style="background-color: blue;">This is Blue</h3>
+
+    <p class="boxed">This will be in a box because it uses border styling.</p>
+
+    <h2>Image as a Link</h2>
+    <p>The image below is a link. Try clicking on it:</p>
+    <a href="https://www.w3schools.com/html/html_links.asp">
+        <img src="smiley.gif" alt="HTML tutorial" width="43" height="42">
+    </a>
+
+    <h2>Image Mapping</h2>
+    <img src="workplace.jpg" alt="workplace" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="computer.htm" alt="computer">
+    </map>
+
+    <h2>Background Image Explanation</h2>
+    <p style="background-image: url('HTML/asset/fingerprint.jpg');">
+        You can specify background images for any visible HTML element.
+        In this example, the background image is specified for a &lt;p&gt; element.
+        It will repeat itself in the direction(s) where it is smaller than the element.
+        Try resizing the browser window to see how it behaves.
+    </p>
+
+    <h2>Table Example</h2>
+    <table border="1">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Techolas</td>
+            <td>Maria</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Lulu</td>
+            <td>Yusuff Ali</td>
+            <td>India</td>
+        </tr>
+    </table>
+    <h2>An unordered html list</h2>
+    <ul>
+        <li>coffie</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+    <h2>Ordered html list</h2>
+    <ol>
+        <li>coffie</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ol>
+    <h2>Discription list</h2>
+    <dl>
+        <dt>coffie</dt>
+        <dd>-black hot drink</dd>
+        <dt>milk</dt>
+        <dd>-white cold drink</dd>
+    </dl> 
+    <h2>unordered list with disc bullets </h2>
+    <ul style="list-style-type: disc;">
+        <li>coffie</li>
+        <li>tea</li>
+    </ul> 
+    <h3>circle</h3>
+    <ul style="list-style-type: circle;">
+        <li>coffie</li>
+        <li>tea</li>
+    </ul>  
+    <h3>spuare</h3>
+    <ul style="list-style-type: square;">
+        <li>coffie</li>
+        <li>tea</li>
+    </ul> 
+    <h3>none</h3>
+    <ul style="list-style-type: none;">
+        <li>coffie</li>
+        <li>tea</li>
+    </ul> 
+    <h3>nested list</h3>
+    <ul>
+        <li>coffie</li>
+        <li>tea
+            <ul>
+                 <li>blacktea</li>
+                 <li>greentea</li>
+            </ul>
+        </li>
+        <li>milk</li>    
+    </ul>
+    <h2>Horizontal List with CSS</h2>
+<h3>Navigation Menu</h3>
+<p>In this example, we use CSS to style the list horizontally to create a navigation menu:</p>
+
+<style>
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #111111;
+}
+</style>
+
+<ul class="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+
+</body>
 </html>
+
 
