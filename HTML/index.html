@@ -192,7 +192,130 @@ ul.navbar li a:hover {
     <li><a href="#contact">Contact</a></li>
     <li><a href="#about">About</a></li>
 </ul>
-
+<div style="background-color: black;color: white;padding: 20px;">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <h2>span element</h2>
+    <p>my mother has a <span style="color: red;">red</span> car and a <span style="color: blue;">blue</span> house.</p>
+</div>
+<h2>Div element</h2>
+<div>
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+</div>
+<div style="width: 300px;margin: auto;background-color: #FFF4A3;">
+    <h2>center align div element</h2>
+    <p>this will be aligned at the center of the page</p>
+</div>
+<h2>Multiple div elements </h2>
+<div style="background-color: antiquewhite;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+</div>
+<div style="background-color: aqua;">
+    <h2>Paris</h2>
+    <p>Paris is the capital city of France.</p>
+</div>
+<div style="background-color: aquamarine;">
+    <h2>Madrid</h2>
+    <p>Madrid is the capital city of Spain.</p>
+</div>
+<div>
+<h2>Alighn div element side by side.</h2>
+    <style>
+     div.mycontainer{
+        width: 100%;
+        overflow: auto;
+    }
+    div.mycontainer div{
+        width: 30%;
+        float: left;
+    }
+    </style>
+    <div class="mycontainer">
+        <div style="background-color:#FFF4A3;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div style="background-color:#FFC0C7;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div style="background-color:#D9EEE1;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+        </div>
+    </div>
+</div>
+<div>
+<h2>Inline block</h2>
+    <style>
+    div{
+        width: 30%;
+        display: inline-block;
+        }
+    </style>
+    <div style="background-color:#FFF4A3;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+    </div>
+    <div style="background-color:#FFC0C7;">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+    </div>
+    <div style="background-color:#D9EEE1;">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+    </div> 
+<div>
+<h2>Flex box</h2>
+    <style>
+    .mycontainer{
+        display: flex;
+    }
+    .mycontainer>div {
+        width: 40%;
+    }
+    </style>
+    <div class="mycontainer">
+        <div style="background-color:#FFF4A3;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div style="background-color:#FFC0C7;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div style="background-color:#D9EEE1;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+        </div> 
+    </div>
+</div> 
+<div>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 40% 40% 40%;
+        }
+    </style>
+    <h2>Grid example</h2>
+    <div class="grid-container">
+        <div style="background-color: #FFF4A3;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div style="background-color: aqua;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div style="background-color: aquamarine;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+        </div>
+    </div>
+</div>      
 </body>
 </html>
 
