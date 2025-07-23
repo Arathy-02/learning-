@@ -208,6 +208,7 @@ ul.navbar li a:hover {
     <h2>center align div element</h2>
     <p>this will be aligned at the center of the page</p>
 </div>
+<hr>
 <h2>Multiple div elements </h2>
 <div style="background-color: antiquewhite;">
     <h2>London</h2>
@@ -222,7 +223,6 @@ ul.navbar li a:hover {
     <p>Madrid is the capital city of Spain.</p>
 </div>
 <div>
-<h2>Alighn div element side by side.</h2>
     <style>
      div.mycontainer{
         width: 100%;
@@ -233,6 +233,8 @@ ul.navbar li a:hover {
         float: left;
     }
     </style>
+</div>
+    <h2>Alighn div element side by side.</h2>
     <div class="mycontainer">
         <div style="background-color:#FFF4A3;">
             <h2>London</h2>
@@ -247,7 +249,6 @@ ul.navbar li a:hover {
             <p>Rome is the capital city of Italy.</p>
         </div>
     </div>
-</div>
 <div>
 <h2>Inline block</h2>
     <style>
@@ -269,7 +270,6 @@ ul.navbar li a:hover {
         <p>Rome is the capital city of Italy.</p>
     </div> 
 <div>
-<h2>Flex box</h2>
     <style>
     .mycontainer{
         display: flex;
@@ -278,6 +278,8 @@ ul.navbar li a:hover {
         width: 40%;
     }
     </style>
+</div>
+    <h2>Flex box</h2>
     <div class="mycontainer">
         <div style="background-color:#FFF4A3;">
             <h2>London</h2>
@@ -292,14 +294,14 @@ ul.navbar li a:hover {
             <p>Rome is the capital city of Italy.</p>
         </div> 
     </div>
-</div> 
 <div>
     <style>
         .grid-container{
             display: grid;
-            grid-template-columns: 40% 40% 40%;
+            grid-template-columns: 100% 200% 150% ;
         }
     </style>
+</div>
     <h2>Grid example</h2>
     <div class="grid-container">
         <div style="background-color: #FFF4A3;">
@@ -315,7 +317,136 @@ ul.navbar li a:hover {
             <p>Rome is the capital city of Italy.</p>
         </div>
     </div>
-</div>      
+</div>  
+<div>
+    <style>
+        .city{
+            background-color: tomato;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</div>
+<h2>class attributes</h2>
+<div class="city">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+</div>
+<div class="city">
+    <h2>rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+</div>    
+<div>
+    <style>
+        .note{
+            color:red;
+            font-size: 120px;
+        }
+    </style>
+</div>
+    <h2>marking imp works using span</h2>
+    <p>This is a <span class="note">note</span> that is marked with a blue color and a larger font size.</p>
+<div>
+    <style>
+        .name{
+            background-color:black;
+            padding: 20px;
+            color: #D9EEE1;
+        }
+        .main{
+            text-align: center;
+        }
+    </style>
+</div>
+<h2>Multiple classes</h2>
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+<h2 class="name main">London</h2>
+<h2 class="name">Paris</h2>
+<h2 class="name">Rome</h2>
+<div>
+    <style>
+        .diff{
+            font-size: 20px;
+            color:white;
+            background-color:tomato;
+        }
+    </style>
+</div>
+    <h2> Diff elements can share same classes</h2>
+    <p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+    <h2 class="diff">Paris</h2>
+    <p class="diff">Paris is a capital of france.</p>
+<div>
+    <style>
+        #myheader{
+            background-color:aqua;
+            padding: 20px;
+            text-align: center;
+            color: #111111;
+        }
+    </style>
+</div>
+<div>
+<h2>The id attributes</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+<h2 id="myheader">My Header</h2>
+<h1 id="c4">Chapter4</h1>
+<h1 id="c10">Chapter10</h1>
+<a href="#c4">jumb to Chapter4</a>
+<a href="#c10">jumb to Chapter6</a>
+</div>
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="c4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+<div>
+    <h2>HTML Iframe </h2>
+    <p>You can use the height and width attributes to specify the size of the iframe:</p>
+    <iframe src="demo_iframe.htm" height="200px" width="300" title="frame example"></iframe>
+</div>
+<div>
+    <h2>Remove iframe border</h2>
+    <p>Use the frameborder attribute to remove the border around the iframe:</p>
+    <iframe src="demo_iframe.htm" style="border: none;" title="iframe example"></iframe>
+</div>
 </body>
 </html>
 
